@@ -1,0 +1,53 @@
+/* fonts */
+
+@font-face{font-family:'Raleway-Black';src:local('Raleway-Black'),url('https://nomail.com.ua/files/woff/d641109f46a9231b7a92d6a114302a2b.woff') format('woff');}
+@font-face{font-family:'Raleway-Lighter';src:local('Raleway-ExtraLight'),url('https://nomail.com.ua/files/woff/ebd5c800e24e108dd3aeacb28e16c595.woff') format('woff');}
+@font-face{font-family:'Raleway-Light';src:local('Raleway-Light'),url('https://nomail.com.ua/files/woff/6b562d7ca359ccb3259f570bcceb4f70.woff') format('woff');}
+@font-face{font-family:'Raleway-Regular';src:local('Raleway-Regular'),url('https://nomail.com.ua/files/woff/2d4cd8722065da2ac700199273325752.woff') format('woff');}
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:900'); //font-family: 'Yantramanav', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* colors */
+$bg: #191e3f;
+$red: #d25a5e;
+
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  min-height: inherit;
+  display: flex;
+  position: relative;
+}
+
+%num {
+  display: flex;
+  position: relative;
+  color: rgba(white, 0.02);
+  font-family: "Yantramanav";
+  font-size: 286px;
+  font-weight: 900;
+  line-height: 0;
+  justify-content:center;
+
+  &:before {
+    content: attr(data-css);
+    position: absolute;
+    transform: rotate(-90deg);
+    color: rgba(white, 0.7);
+    font-family: "Raleway-Lighter";
+    font-size: 30px;
+    font-weight: 100;
+    padding: 5px 0 0 10px;
+  }
+}
+
+%letter {
+  opacity: 0.61;
+  color: #191e3f;
+  font-family: "Raleway-Black";
+  font-size: 1300px;
+  text-shadow: 0 178px 152px rgba(0, 0, 0, .45);
+  line-height: 0;
+}
+

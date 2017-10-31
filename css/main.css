@@ -1,0 +1,345 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:900");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@font-face {
+  font-family: 'Raleway-Black';
+  src: local("Raleway-Black"), url("https://nomail.com.ua/files/woff/d641109f46a9231b7a92d6a114302a2b.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Raleway-Lighter';
+  src: local("Raleway-ExtraLight"), url("https://nomail.com.ua/files/woff/ebd5c800e24e108dd3aeacb28e16c595.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: local("Raleway-Light"), url("https://nomail.com.ua/files/woff/6b562d7ca359ccb3259f570bcceb4f70.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: local("Raleway-Regular"), url("https://nomail.com.ua/files/woff/2d4cd8722065da2ac700199273325752.woff") format("woff"); }
+
+/* colors */
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  min-height: inherit;
+  display: flex;
+  position: relative; }
+
+.mission .wrapper .el-1 .num, .projects .wrapper .el-1 .num, .team .wrapper .el-1 .num, .event .wrapper .el-1 .num {
+  display: flex;
+  position: relative;
+  color: rgba(255, 255, 255, 0.02);
+  font-family: "Yantramanav";
+  font-size: 286px;
+  font-weight: 900;
+  line-height: 0;
+  justify-content: center; }
+  .mission .wrapper .el-1 .num:before, .projects .wrapper .el-1 .num:before, .team .wrapper .el-1 .num:before, .event .wrapper .el-1 .num:before {
+    content: attr(data-css);
+    position: absolute;
+    transform: rotate(-90deg);
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Raleway-Lighter";
+    font-size: 30px;
+    font-weight: 100;
+    padding: 5px 0 0 10px; }
+
+.projects .wrapper .el-1 .letter, .team .wrapper .el-1 .letter, .event .wrapper .el-1 .letter {
+  opacity: 0.61;
+  color: #191e3f;
+  font-family: "Raleway-Black";
+  font-size: 1300px;
+  text-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+  line-height: 0; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  height: 100%;
+  color: white;
+  background: #191e3f; }
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  background: url(/img/mountains-header.png) no-repeat center;
+  background-size: cover;
+  width: 100%; }
+  .header .wrapper {
+    flex-wrap: wrap; }
+  .header .row_1 {
+    padding-top: 84px;
+    text-align: center;
+    flex-basis: 100%; }
+    .header .row_1 .logo {
+      margin-right: -43px; }
+    .header .row_1 .menu {
+      margin-top: 30px;
+      float: right;
+      width: 43px;
+      height: 17px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .header .row_1 .menu:before, .header .row_1 .menu:after {
+        height: 4px;
+        content: " ";
+        background: white;
+        display: block; }
+  .header .row_2 {
+    flex-basis: 100%; }
+  .header h1 {
+    text-align: center;
+    font-family: "Raleway-Lighter";
+    font-size: 60px;
+    font-weight: 100;
+    opacity: 0.6;
+    margin-top: -5px; }
+
+section {
+  position: relative;
+  min-height: 100vh; }
+
+.mission {
+  width: auto;
+  padding: 50px 0 200px 0;
+  box-sizing: border-box; }
+  .mission .wrapper {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .mission .wrapper .el-1 {
+      position: absolute;
+      left: 0; }
+    .mission .wrapper .el-2 {
+      position: relative;
+      width: 660px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #191d3f;
+      -webkit-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+      -moz-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+      -webkit-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45); }
+      .mission .wrapper .el-2 image {
+        max-width: 100%; }
+      .mission .wrapper .el-2 .text {
+        width: 400px;
+        position: absolute;
+        left: 54%;
+        font-family: "Raleway-Lighter";
+        font-size: 17px;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.7);
+        white-space: pre;
+        line-height: 1.5; }
+
+.projects {
+  position: relative;
+  min-height: 100vh;
+  background: url(/img/projects-background.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 200px; }
+  .projects .wrapper {
+    align-items: center;
+    flex-wrap: wrap; }
+    .projects .wrapper .el-1 {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      width: inherit; }
+      .projects .wrapper .el-1 .letter {
+        margin-left: -150px; }
+      .projects .wrapper .el-1 .num {
+        margin-top: -300px; }
+    .projects .wrapper .el-2 {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      height: 240px; }
+
+.team {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 0 600px 0; }
+  .team .wrapper {
+    padding: 200px 0; }
+    .team .wrapper .el-1 {
+      position: absolute;
+      min-height: inherit;
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      .team .wrapper .el-1 .num {
+        position: absolute;
+        left: 0; }
+      .team .wrapper .el-1 .letter {
+        align-self: flex-end; }
+    .team .wrapper .el-2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: -50px; }
+      .team .wrapper .el-2 .photo, .team .wrapper .el-2 .photo_2, .team .wrapper .el-2 .photo_3, .team .wrapper .el-2 .photo_4, .team .wrapper .el-2 .photo_5 {
+        -webkit-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+        -webkit-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+        box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+        transition: all 0.3s ease;
+        display: flex; }
+        .team .wrapper .el-2 .photo .info, .team .wrapper .el-2 .photo_2 .info, .team .wrapper .el-2 .photo_3 .info, .team .wrapper .el-2 .photo_4 .info, .team .wrapper .el-2 .photo_5 .info {
+          position: absolute;
+          width: 340px;
+          height: 300px;
+          transition: all 0.3s ease; }
+          .team .wrapper .el-2 .photo .info:before, .team .wrapper .el-2 .photo_2 .info:before, .team .wrapper .el-2 .photo_3 .info:before, .team .wrapper .el-2 .photo_4 .info:before, .team .wrapper .el-2 .photo_5 .info:before {
+            width: 56px;
+            height: 4px;
+            content: " ";
+            background: white;
+            display: block;
+            margin-bottom: 20px; }
+          .team .wrapper .el-2 .photo .info .name, .team .wrapper .el-2 .photo_2 .info .name, .team .wrapper .el-2 .photo_3 .info .name, .team .wrapper .el-2 .photo_4 .info .name, .team .wrapper .el-2 .photo_5 .info .name {
+            color: #fff;
+            font-family: "Raleway-Regular";
+            font-size: 32px;
+            margin-bottom: 17px; }
+          .team .wrapper .el-2 .photo .info .prof, .team .wrapper .el-2 .photo_2 .info .prof, .team .wrapper .el-2 .photo_3 .info .prof, .team .wrapper .el-2 .photo_4 .info .prof, .team .wrapper .el-2 .photo_5 .info .prof {
+            opacity: 0.5;
+            color: #fff;
+            font-family: "Raleway-Light";
+            font-size: 16px; }
+        .team .wrapper .el-2 .photo:hover, .team .wrapper .el-2 .photo_2:hover, .team .wrapper .el-2 .photo_3:hover, .team .wrapper .el-2 .photo_4:hover, .team .wrapper .el-2 .photo_5:hover {
+          box-shadow: 0 30px 30px rgba(0, 0, 0, 0.45);
+          transform: scale(0.9); }
+      .team .wrapper .el-2 .photo {
+        align-self: flex-end;
+        height: 558px; }
+        .team .wrapper .el-2 .photo .info {
+          top: 230px;
+          right: 370px; }
+          .team .wrapper .el-2 .photo .info .text {
+            position: absolute;
+            color: #fff;
+            font-family: "Raleway-Light";
+            font-size: 15px;
+            position: relative;
+            left: 0;
+            white-space: normal;
+            width: 300px;
+            opacity: 0.5; }
+      .team .wrapper .el-2 .photo_2 {
+        height: 397px;
+        align-self: flex-start;
+        margin-top: 100px; }
+        .team .wrapper .el-2 .photo_2 .info {
+          position: absolute;
+          height: 150px;
+          left: 340px;
+          align-self: flex-end; }
+      .team .wrapper .el-2 .photo_3 {
+        height: 397px;
+        align-self: flex-end;
+        margin-top: -260px; }
+        .team .wrapper .el-2 .photo_3 .info {
+          height: 150px;
+          right: 150px;
+          align-self: flex-end; }
+      .team .wrapper .el-2 .wrap-4 {
+        align-self: flex-start;
+        padding-top: 30px;
+        padding-left: 130px;
+        box-sizing: border-box; }
+        .team .wrapper .el-2 .wrap-4 .photo_4 {
+          position: absolute;
+          height: 397px; }
+          .team .wrapper .el-2 .wrap-4 .photo_4 .info {
+            height: 150px;
+            left: -100px;
+            align-self: flex-end; }
+      .team .wrapper .el-2 .wrap-5 {
+        align-self: flex-end;
+        padding: 170px 450px 0 0;
+        box-sizing: border-box; }
+        .team .wrapper .el-2 .wrap-5 .photo_5 {
+          height: 397px;
+          position: absolute; }
+          .team .wrapper .el-2 .wrap-5 .photo_5 .info {
+            height: 150px;
+            right: -180px;
+            align-self: flex-end; }
+
+.event {
+  padding-top: 200px;
+  position: relative;
+  min-height: 100vh;
+  background: url(/img/EVENT.png) no-repeat center;
+  background-size: cover;
+  width: 100%; }
+  .event .wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+    .event .wrapper .el-1 {
+      position: absolute;
+      min-height: inherit;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: flex-start; }
+      .event .wrapper .el-1 .num {
+        margin-top: -180px; }
+      .event .wrapper .el-1 .letter {
+        font-size: 1200px;
+        position: absolute;
+        right: -70px;
+        margin-top: 113px;
+        opacity: 0.4; }
+    .event .wrapper .el-2 {
+      margin: 0 0 0 70px;
+      width: 450px; }
+      .event .wrapper .el-2 h2 {
+        color: #fff;
+        font-family: "Raleway-Lighter";
+        font-size: 54px;
+        font-weight: 100; }
+      .event .wrapper .el-2 .text {
+        color: #fff;
+        font-family: "Raleway-Light";
+        font-size: 19px;
+        opacity: 0.5; }
+    .event .wrapper footer {
+      position: relative;
+      align-self: flex-end;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 70px;
+      color: #fff;
+      font-family: "Raleway-Light";
+      font-size: 15px; }
+      .event .wrapper footer a {
+        color: #fff;
+        font-family: "Raleway-Light";
+        font-size: 15px;
+        opacity: 0.5; }
+        .event .wrapper footer a:hover {
+          opacity: 1; }
+      .event .wrapper footer .links {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 280px;
+        padding: 35px 0 20px 0;
+        opacity: 0.5; }
+      .event .wrapper footer .copy {
+        opacity: 0.5; }
+        .event .wrapper footer .copy a {
+          padding-left: 10px; }
