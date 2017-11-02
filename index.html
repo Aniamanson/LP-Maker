@@ -8,25 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div class="header">
+<div class="header" data-parallax='{"backgroundPositionX" : "30%"}'>
     <div class="wrapper">
         <div class="row_1">
             <a href="#" class="logo"><img src="img/logo.png"></a>
             <a href="#" class="menu"></a>
         </div>
         <div class="row_2">
-           <h1>we build innovative companies</h1>
+           <h1 data-parallax='{"scale":{"from": "1", "to": "1.4"}, "y":{"from": "-5%", "to": "8%"}, "opacity":{"to":0,"from":0.6}}'>we build innovative companies</h1>
         </div>
     </div>
 </div>
 <section class="mission">
     <div class="wrapper">
         <div class="el-1">
-            <div class="num" data-css="mission">01</div>
+            <div class="num" data-css="mission" data-parallax='{"scale":{"from": "0.8", "to": "1"}, "x":{"from": "-6%", "to": "0%"}}'>01</div>
         </div>
         <div class="el-2">
-            <div class="photo"><img src="img/mountains.png"></div>
-            <div class="text">
+            <div class="photo" data-parallax='{"scale":{"from": "0.8", "to": "1.1"}}'></div>
+            <div class="text" data-parallax='{"scale":{"from": "0.9", "to": "1.2"}, "x":{"from": "5%", "to": "0%"}}'>
                 Is allowance instantly strangers applauded discourse so.
                 Separate entrance welcomed sensible laughing why
                 one moderate shy. We seeing piqued garden he. As in
@@ -42,8 +42,8 @@
 <section class="projects">
     <div class="wrapper">
         <div class="el-1">
-            <div class="letter">R</div>
-            <div class="num"data-css="projects">02</div>
+            <div class="letter" data-parallax='{"x":{"from": "-15%", "to": "0%"}}'>R</div>
+            <div class="num"data-css="projects" data-parallax='{"x":{"from": "15%", "to": "0%"}}'>02</div>
         </div>
         <div class="el-2">
             <a href="#"><img src="img/1.png"></a>
@@ -58,7 +58,7 @@
 <section class="team">
     <div class="wrapper">
         <div class="el-1">
-            <div class="num"data-css="team">03</div>
+            <div class="num"data-css="team" data-parallax='{"scale":{"from": "0.8", "to": "1.1"}, "y":{"from": "-5%", "to": "35%"}}'>03</div>
             <div class="letter">T</div>
         </div>
         <div class="el-2">
@@ -79,21 +79,25 @@
                     </div>
                 </div>
             </div>
-            <div class="photo_2">
-                <img src="img/photo-2.png" width="400px" height="397px" alt="">
-                <div class="info">
-                    <div class="name">Kenneth G. Gilmore</div>
-                    <div class="prof">Business Manager</div>
+            <div class="wrap-2"  data-parallax='{"x":{"from": "-5%", "to": "2%"}}'>
+                <div class="photo_2">
+                    <img src="img/photo-2.png" width="400px" height="397px" alt="">
+                    <div class="info">
+                        <div class="name">Kenneth G. Gilmore</div>
+                        <div class="prof">Business Manager</div>
+                    </div>
                 </div>
             </div>
-            <div class="photo_3">
-                <img src="img/photo-3.png" width="400px" height="397px" alt="">
-                <div class="info">
-                    <div class="name">Richard C. Main</div>
-                    <div class="prof">Marketing & Communication Manager</div>
-                 </div>
+            <div class="wrap-3" data-parallax='{"x":{"from": "5%", "to": "-2%"}}'>
+                <div class="photo_3">
+                    <img src="img/photo-3.png" width="400px" height="397px" alt="">
+                    <div class="info">
+                        <div class="name">Richard C. Main</div>
+                        <div class="prof">Marketing & Communication Manager</div>
+                    </div>
+                </div>
             </div>
-            <div class="wrap-4">
+            <div class="wrap-4" data-parallax='{"x":{"from": "-5%", "to": "2%"}}'>
                 <div class="photo_4">
                     <img src="img/photo-4.png" width="400px" height="397px" alt="">
                     <div class="info">
@@ -102,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrap-5">
+            <div class="wrap-5" data-parallax='{"x":{"from": "5%", "to": "-2%"}}'>
                 <div class="photo_5">
                     <img src="img/photo-5.png" width="400px" height="397px" alt="">
                     <div class="info">
@@ -118,8 +122,8 @@
 <section class="event">
     <div class="wrapper">
         <div class="el-1">
-            <div class="num"data-css="event">04</div>
-            <div class="letter">E</div>
+            <div class="num"data-css="event" data-parallax='{"x":{"from": "-10%", "to": "0%"}}'>04</div>
+            <div class="letter" data-parallax='{"scale":{"from": "0.8", "to": "1.1"}}'>E</div>
         </div>
         <div class="el-2">
             <h2>Feel emotions</h2>
@@ -146,5 +150,7 @@
         </footer>
     </div>
 </section>
-<script src=""></script>
-</body
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.requestAnimationFrame.min.js"></script>
+<script src="js/jquery.data-parallax.js"></script>
+</body>

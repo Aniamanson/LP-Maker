@@ -114,17 +114,17 @@ section {
       left: 0; }
     .mission .wrapper .el-2 {
       position: relative;
-      width: 660px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      background-color: #191d3f;
-      -webkit-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
-      -moz-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
-      -webkit-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
-      box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45); }
-      .mission .wrapper .el-2 image {
-        max-width: 100%; }
+      justify-content: center; }
+      .mission .wrapper .el-2 .photo {
+        background: url("../img/mountains.png") no-repeat;
+        width: 660px;
+        height: 658px;
+        -webkit-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+        -webkit-box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+        box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45); }
       .mission .wrapper .el-2 .text {
         width: 400px;
         position: absolute;
@@ -237,19 +237,21 @@ section {
             white-space: normal;
             width: 300px;
             opacity: 0.5; }
-      .team .wrapper .el-2 .photo_2 {
-        height: 397px;
+      .team .wrapper .el-2 .wrap-2 {
         align-self: flex-start;
         margin-top: 100px; }
+      .team .wrapper .el-2 .photo_2 {
+        height: 397px; }
         .team .wrapper .el-2 .photo_2 .info {
           position: absolute;
           height: 150px;
           left: 340px;
           align-self: flex-end; }
-      .team .wrapper .el-2 .photo_3 {
-        height: 397px;
+      .team .wrapper .el-2 .wrap-3 {
         align-self: flex-end;
         margin-top: -260px; }
+      .team .wrapper .el-2 .photo_3 {
+        height: 397px; }
         .team .wrapper .el-2 .photo_3 .info {
           height: 150px;
           right: 150px;

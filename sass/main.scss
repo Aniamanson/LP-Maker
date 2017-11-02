@@ -87,18 +87,19 @@ section {
 
     .el-2 {
       position: relative;
-      width: 660px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #191d3f;
-      -webkit-box-shadow: 0 178px 152px rgba(0,0,0,.45);
-      -moz-box-shadow: 0 178px 152px rgba(0,0,0,.45);
-      -webkit-box-shadow: 0 178px 152px rgba(0,0,0,.45);
-      box-shadow: 0 178px 152px rgba(0,0,0,.45);
 
-      image {
-        max-width: 100%;
+      .photo {
+        background: url("../img/mountains.png") no-repeat;
+        width: 660px;
+        height: 658px;
+        -webkit-box-shadow: 0 178px 152px rgba(0,0,0,.45);
+        -moz-box-shadow: 0 178px 152px rgba(0,0,0,.45);
+        -webkit-box-shadow: 0 178px 152px rgba(0,0,0,.45);
+        box-shadow: 0 178px 152px rgba(0,0,0,.45);
+
       }
 
       .text {
@@ -263,10 +264,13 @@ section {
         }
       }
 
-      .photo_2 {
-        height: 397px;
+      .wrap-2 {
         align-self: flex-start;
         margin-top: 100px;
+      }
+
+      .photo_2 {
+        height: 397px;
 
         .info {
           position: absolute;
@@ -276,10 +280,13 @@ section {
         }
       }
 
-      .photo_3 {
-        height: 397px;
+      .wrap-3 {
         align-self: flex-end;
         margin-top: -260px;
+      }
+
+      .photo_3 {
+        height: 397px;
 
 
         .info {
